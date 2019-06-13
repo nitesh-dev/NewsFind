@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Light</string>
+        </array>
+        <array key="AvenirNextCondensed.ttc">
+            <string>AvenirNextCondensed-DemiBold</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-LightItalic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="searchCell" id="thi-vX-tbC" customClass="SearchResultCell" customModule="NewsFinder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="161"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idR-5F-GFW" customClass="BezierCutView" customModule="NewsFinder" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="334" height="161"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7CF-9l-r6b">
+                                <rect key="frame" x="0.0" y="0.0" width="334" height="161"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hold the Mayo! Florida town is changing its name temporarily" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ODw-Ip-zFF">
+                                <rect key="frame" x="15" y="46" width="304" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="4kL-I7-yOt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CNN.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GW-4W-NJi">
+                                <rect key="frame" x="15" y="17" width="74" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 August, 2018" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kI-oT-oda">
+                                <rect key="frame" x="15" y="107" width="304" height="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luJ-cp-3r1">
+                                <rect key="frame" x="289" y="12" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="4ME-ct-Tda"/>
+                                </constraints>
+                                <state key="normal" image="icons8-heart-outline-65">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.66647046229999996" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6kI-oT-oda" secondAttribute="trailing" constant="15" id="2dL-u9-LpS"/>
+                            <constraint firstItem="luJ-cp-3r1" firstAttribute="trailing" secondItem="ODw-Ip-zFF" secondAttribute="trailing" id="34K-Jk-alf"/>
+                            <constraint firstAttribute="trailing" secondItem="7CF-9l-r6b" secondAttribute="trailing" id="5fe-de-Ies"/>
+                            <constraint firstItem="7CF-9l-r6b" firstAttribute="top" secondItem="idR-5F-GFW" secondAttribute="top" id="AYi-8d-4Jx"/>
+                            <constraint firstItem="ODw-Ip-zFF" firstAttribute="top" secondItem="idR-5F-GFW" secondAttribute="top" constant="46" id="DSO-yh-3cj"/>
+                            <constraint firstItem="3GW-4W-NJi" firstAttribute="leading" secondItem="idR-5F-GFW" secondAttribute="leading" constant="15" id="EgK-Rd-uBm"/>
+                            <constraint firstItem="ODw-Ip-zFF" firstAttribute="trailing" secondItem="6kI-oT-oda" secondAttribute="trailing" id="FTe-6Y-7gc"/>
+                            <constraint firstItem="7CF-9l-r6b" firstAttribute="top" secondItem="idR-5F-GFW" secondAttribute="top" id="Go4-eq-XtO"/>
+                            <constraint firstItem="7CF-9l-r6b" firstAttribute="leading" secondItem="idR-5F-GFW" secondAttribute="leading" id="L7M-vb-LQX"/>
+                            <constraint firstItem="3GW-4W-NJi" firstAttribute="top" secondItem="idR-5F-GFW" secondAttribute="top" constant="17" id="LhI-EA-iJY"/>
+                            <constraint firstItem="6kI-oT-oda" firstAttribute="top" secondItem="ODw-Ip-zFF" secondAttribute="bottom" constant="8" symbolic="YES" id="WmA-md-1lb"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3GW-4W-NJi" secondAttribute="trailing" constant="20" symbolic="YES" id="eq7-wQ-CRK"/>
+                            <constraint firstAttribute="bottom" secondItem="7CF-9l-r6b" secondAttribute="bottom" id="lkg-yj-48e"/>
+                            <constraint firstItem="7CF-9l-r6b" firstAttribute="leading" secondItem="idR-5F-GFW" secondAttribute="leading" id="ohO-Lb-lBD"/>
+                            <constraint firstItem="luJ-cp-3r1" firstAttribute="top" secondItem="idR-5F-GFW" secondAttribute="top" constant="12" id="qs0-Ld-dZa"/>
+                            <constraint firstItem="ODw-Ip-zFF" firstAttribute="leading" secondItem="6kI-oT-oda" secondAttribute="leading" id="rTA-2o-9W3"/>
+                            <constraint firstItem="6kI-oT-oda" firstAttribute="leading" secondItem="idR-5F-GFW" secondAttribute="leading" constant="15" id="rnY-7x-CGr"/>
+                            <constraint firstItem="ODw-Ip-zFF" firstAttribute="top" secondItem="luJ-cp-3r1" secondAttribute="bottom" constant="4" id="uoe-8g-oTS"/>
+                            <constraint firstAttribute="trailing" secondItem="7CF-9l-r6b" secondAttribute="trailing" id="uqD-sO-Rra"/>
+                            <constraint firstAttribute="bottom" secondItem="7CF-9l-r6b" secondAttribute="bottom" id="zAf-8E-Kqv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="idR-5F-GFW" secondAttribute="bottom" id="8Uj-hR-tOl"/>
+                <constraint firstAttribute="bottom" secondItem="idR-5F-GFW" secondAttribute="bottom" id="InT-Va-qWB"/>
+                <constraint firstItem="idR-5F-GFW" firstAttribute="leading" secondItem="thi-vX-tbC" secondAttribute="leading" id="Tqy-Il-JyD"/>
+                <constraint firstItem="idR-5F-GFW" firstAttribute="top" secondItem="thi-vX-tbC" secondAttribute="top" id="cL3-N0-EOQ"/>
+                <constraint firstAttribute="trailing" secondItem="idR-5F-GFW" secondAttribute="trailing" id="ikc-Yx-BdT"/>
+                <constraint firstItem="idR-5F-GFW" firstAttribute="top" secondItem="thi-vX-tbC" secondAttribute="top" id="yFT-3m-uRS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="2de-Kr-vr6"/>
+            <size key="customSize" width="334" height="161"/>
+            <connections>
+                <outlet property="backImgView" destination="7CF-9l-r6b" id="IaV-76-XId"/>
+                <outlet property="dateLabel" destination="6kI-oT-oda" id="wKH-AZ-yW1"/>
+                <outlet property="loveButton" destination="luJ-cp-3r1" id="mSI-zb-xWd"/>
+                <outlet property="sourceLabel" destination="3GW-4W-NJi" id="jxb-td-fPZ"/>
+                <outlet property="titleLabel" destination="ODw-Ip-zFF" id="2VO-QR-Dwr"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="-102.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icons8-heart-outline-65" width="64" height="64"/>
+    </resources>
+</document>

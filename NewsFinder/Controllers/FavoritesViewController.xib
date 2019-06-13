@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritesViewController" customModule="NewsFinder" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Qmc-q1-yxQ">
+                    <rect key="frame" x="0.0" y="100" width="414" height="636"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dHv-Zd-BOv">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CC6-wf-pRb">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="GOK-7e-SII"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CC6-wf-pRb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5TU-u0-ywy"/>
+                <constraint firstItem="CC6-wf-pRb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HUE-jM-JmG"/>
+                <constraint firstItem="CC6-wf-pRb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Icl-jz-Fp1"/>
+                <constraint firstItem="Qmc-q1-yxQ" firstAttribute="top" secondItem="CC6-wf-pRb" secondAttribute="bottom" id="PFH-eu-BeW"/>
+                <constraint firstItem="Qmc-q1-yxQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="YE6-sP-uba"/>
+                <constraint firstItem="Qmc-q1-yxQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="a5a-kw-7cj"/>
+                <constraint firstItem="Qmc-q1-yxQ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="edy-VP-zww"/>
+                <constraint firstItem="Qmc-q1-yxQ" firstAttribute="top" secondItem="CC6-wf-pRb" secondAttribute="bottom" id="xiA-pi-tvf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="6" y="81"/>
+        </view>
+    </objects>
+</document>
